@@ -411,3 +411,104 @@ footer {
 
 }
 
+@media (max-width: 500px) {
+	.container {
+    width: 100%;
+    margin: 0;
+	}
+
+	header {
+		flex-direction: column;
+    justify-content: center;
+    margin: 0;
+	}
+
+	header nav {
+		order: 1;
+		flex-direction: column;
+		width: 100%;
+    margin: 0;
+
+	}
+
+	header nav a {
+    border-top: 1px solid grey;
+		width: 100%;
+		align-self: center;
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+  }
+  
+  header nav:last child a {
+    border-bottom: 1px solid grey;
+  }
+
+	header nav a:hover {
+		background: #1b1d1b;
+		color: white;
+		border: 1px solid white;
+	}
+
+	header .logo {
+		padding: 20px 20px 30px 20px;
+		width: 50%;
+  }
+
+  .title-header {
+    padding-top: 10px;
+  }
+
+	.title-header .right {
+		display: none;
+	}
+
+	.content-top {
+		flex-direction: column;
+		padding: 30px 0;
+    width: 100%;
+    margin-bottom: 0;
+	}
+
+  .main {
+    margin: 20px;
+  }
+	.main .content-top .content-text {
+		width: 100%;
+		text-align: justify;
+    flex-direction: column;
+    padding: 15px 0;
+	}
+
+	.main .content-top .content-text:last-child {
+		margin-left: 0;
+  }
+  
+  .main .middle-image {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    
+  }
+	.main .content-bottom {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+	}
+
+	.main .content-bottom .content-text {
+		width: 100%;
+  }
+
+	.contact {
+    width: 100%;
+    margin: 0 10px;
+    padding-left: 10px;
+    margin-top: 50px;
+    padding-top: 0;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
