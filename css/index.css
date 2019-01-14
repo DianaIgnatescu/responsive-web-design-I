@@ -95,9 +95,10 @@ header nav {
 }
 
 header nav a {
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
-	color:lightgray;
+  color:gray;
+  font-weight: 700;
 }
 
 header nav a:hover {
@@ -115,27 +116,32 @@ header .logo {
 .title-header {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
+	justify-content: space-evenly;
+  align-content: center;
+  padding: 20px 0 15px 0;
 }
 
 .title-header .left {
-	display: block;
+	/* display: block; */
 	font-size: 70px;
 	text-align: center;
 	width: 400px;
-	align-self: center;
+  align-self: center;
+  margin-left: 40px;
+  margin-right: 90px;
+  padding-top: 20px;
+  padding-left: 100px;
 }
 
 button {
-	font-size: 20px;
+	font-size: 16px;
 	background-color: white;
 	vertical-align: top;
 	text-decoration: none;
 	border-radius: 2px;
-	padding: 8px 44px;
+	padding: 6px 42px;
 	border: 1px solid black;
-	margin-top: 6px;
+	margin-top: 13px;
 	cursor: pointer;
 }
 
@@ -159,7 +165,7 @@ button:hover {
 }
 
 .main h3 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .content-top {
@@ -167,15 +173,15 @@ button:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-top: 35px;
+	padding-bottom: 10px;
 }
 
 .main .content-top .content-text {
 	display: flex;
 	flex-direction: column;
-	width: 410px;
-	margin-right: 34px;
+	width: 430px;
+	/* margin-right: 10px; */
 	text-align: justify;
 }
 
@@ -185,20 +191,18 @@ button:hover {
 
 .main .content-top .content-text:last-child {
 	margin-right: 0;
-	margin-left: 12px;
 }
 
 .main .middle-image {
-	margin: 30px 0;
+	margin: 30px 0 10px 0;
 }
 
 .main .content-bottom {
 	border-bottom: 1px solid black;
 	display: flex;
 	flex-direction: row;
-	
 	justify-content: space-between;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 	padding-top: 20px;
 }
 
@@ -206,7 +210,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
- 	margin-right: 34px;
+ 	margin-right: 10px;
 	text-align: justify;
 }
 
@@ -220,16 +224,16 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 39px 0;
+	padding: 35px 0 20px 0;
 }
 
 .contact h3 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 footer  {
 text-align: center;
-padding: 60px 0 100px 0;
+padding: 40px 0 100px 0;
 }
 
 .services-head {
@@ -303,7 +307,7 @@ ul li {
 }
 
 footer {
-	padding: 40px; 
+	padding: 10px 0 40px 0; 
 }
 
 .info {
@@ -318,5 +322,92 @@ footer {
 	box-shadow: 2px 2px 22px 4px rgba(0,0,0,0.35);
 	background: #1b1d1b;
 	border: 1px solid #f3f4f3;
+}
+
+
+@media (max-width: 800px) {
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	header {
+    margin: 0 20px;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  header nav {
+    order: 1;
+    margin-top: 34px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+	.title-header {
+    flex-direction: column;
+    
+  }
+  
+  .title-header .left {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+
+	.title-header .right {
+		display: none;
+	}
+
+	.main {
+		margin: 0 20px;
+  }
+
+  .content-top {
+    border-top: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .content-top .content-text {
+    margin: 0 20px;
+  }
+
+  .main .content-top .content-text:first-child p {
+    margin-right: 20px;
+  }
+
+  .middle-image {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+	.main .content-bottom {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+	}
+
+	.main .content-bottom .content-text {
+    padding-bottom: 60px;
+    margin-right: 20px;
+    text-align: left;
+	}
+
+	.contact {
+    margin: 0 20px;
+    padding-left: 10px;
+  }
+  
+
 }
 
