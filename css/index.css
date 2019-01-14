@@ -65,8 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-
-
 .container {
 	display: flex;
 	width: 880px;
@@ -324,6 +322,8 @@ footer {
 	border: 1px solid #f3f4f3;
 }
 
+/* ___MEDIA QUERIES___ */
+/* TABLET */
 
 @media (max-width: 800px) {
 	.container {
@@ -411,6 +411,8 @@ footer {
 
 }
 
+/* MOBILE */
+
 @media (max-width: 500px) {
 	.container {
     width: 100%;
@@ -428,6 +430,8 @@ footer {
 		flex-direction: column;
 		width: 100%;
     margin: 0;
+    border-bottom: 1px solid grey;
+    padding-bottom: 7px;
 
 	}
 
@@ -440,7 +444,7 @@ footer {
 		margin: 0;
   }
   
-  header nav:last child a {
+  header nav a:last child {
     border-bottom: 1px solid grey;
   }
 
